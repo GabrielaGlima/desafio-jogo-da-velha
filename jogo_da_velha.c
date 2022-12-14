@@ -29,7 +29,7 @@ int Colunas(){
     int i, j, cont = 1;
     for(i = 0; i < TAM; i++){
         for(j = 0; j < TAM - 1; j++){
-            if(verifica_igual(jogo[i][j]) && jogo[j][i] == jogo[j+1][i])
+            if(verifica_igual(jogo[j][i]) && jogo[j][i] == jogo[j+1][i])
                 cont++;
         }
         if(cont == TAM){
